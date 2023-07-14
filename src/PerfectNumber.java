@@ -1,6 +1,6 @@
 import java.util.Scanner;
 /*
-This class contains a function which finds whether the number received from the user is perfect or not and  notifies
+    This class contains a function which finds whether the number received from the user is perfect or not and  notifies
 the user with a message.
  */
 public class PerfectNumber {

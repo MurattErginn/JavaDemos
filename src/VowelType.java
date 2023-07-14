@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 /*
-This class contains a function which finds whether the letter received from the user is the vowel bold or thin and
+    This class contains a function which finds whether the letter received from the user is the vowel bold or thin and
 notifies the user with a message.
  */
 public class VowelType {
