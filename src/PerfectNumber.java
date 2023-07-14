@@ -6,20 +6,18 @@ the user with a message.
 public class PerfectNumber {
     public static void main(String[] args) {
         Scanner scanObj = new Scanner(System.in);
-        boolean isOn = true;
-        while (isOn) {
+        while (true) {
             System.out.print("Please enter a number (enter \"E\" to exit): ");
             String input = scanObj.nextLine();
             if (input.equals("E") || input.equals("e")) {
                 System.out.println("Have a great day!!!");
-                isOn = false;
                 break;
             } else {
                 int number = Integer.parseInt(input);
                 if(isPerfectNumber(number)) {
-                    System.out.println("The number you entered is a perfect number");
+                    System.out.println("The number you entered is a perfect number.");
                 } else {
-                    System.out.println("The number you entered is not a perfect number");
+                    System.out.println("The number you entered is not a perfect number.");
                 }
 
             }
@@ -32,11 +30,6 @@ public class PerfectNumber {
                 total += i;
             }
         }
-        if(total == num) {
-            return true;
-            //
-        } else {
-            return false;
-        }
+        return total == num;
     }
 }
