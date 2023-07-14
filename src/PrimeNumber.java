@@ -1,7 +1,7 @@
 import java.util.Scanner;
-
-import static java.lang.Integer.parseInt;
-
+/*
+This class contains a function which finds whether the number received from the user is prime or not.
+ */
 public class PrimeNumber {
     public static void main(String[] args) {
         Scanner scanObj = new Scanner(System.in);
