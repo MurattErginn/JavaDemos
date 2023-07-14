@@ -1,5 +1,8 @@
 import java.util.Scanner;
-
+/*
+This class contains a function which finds whether the number received from the user is perfect or not and  notifies
+the user with a message.
+ */
 public class PerfectNumber {
     public static void main(String[] args) {
         Scanner scanObj = new Scanner(System.in);
@@ -13,18 +16,27 @@ public class PerfectNumber {
                 break;
             } else {
                 int number = Integer.parseInt(input);
-                int total = 0;
-                for (int i = 1; i < number / 2 + 1; i++) {
-                    if (number % i == 0) {
-                        total += i;
-                    }
-                }
-                if(total == number) {
+                if(isPerfectNumber(number)) {
                     System.out.println("The number you entered is a perfect number");
                 } else {
                     System.out.println("The number you entered is not a perfect number");
                 }
+
             }
+        }
+    }
+    static boolean isPerfectNumber(int num) {
+        int total = 0;
+        for (int i = 1; i < num / 2 + 1; i++) {
+            if (num % i == 0) {
+                total += i;
+            }
+        }
+        if(total == num) {
+            return true;
+            //
+        } else {
+            return false;
         }
     }
 }
