@@ -1,6 +1,10 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/*
+    This class contains a function that returns information whether the number entered in the first parameter is in the
+array entered in the second parameter.
+ */
 public class NumberFinder {
     public static void main(String[] args) {
         ArrayList<Integer> numbers = new ArrayList<>();
