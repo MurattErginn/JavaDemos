@@ -8,11 +8,8 @@ public class Main {
         product.setDescription("Asus Laptop");
         product.setPrice(5500);
         product.setStockAmount(30);
-        System.out.println(product.getCode());
 
         ProductManager productManager = new ProductManager();
         productManager.add(product);
-
-
     }
 }
