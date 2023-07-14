@@ -21,7 +21,6 @@ public class FriendNumbers {
                 } else {
                     System.out.println("The numbers you entered are not friends");
                 }
-
             }
         }
     }
