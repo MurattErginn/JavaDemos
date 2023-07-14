@@ -1,0 +1,5 @@
+package ClassDemos;
+
+class CustomerManager {
+
+}
