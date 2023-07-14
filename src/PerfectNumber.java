@@ -5,8 +5,8 @@ the user with a message.
  */
 public class PerfectNumber {
     public static void main(String[] args) {
-        Scanner scanObj = new Scanner(System.in);
         while (true) {
+            Scanner scanObj = new Scanner(System.in);
             System.out.print("Please enter a number (enter \"E\" to exit): ");
             String input = scanObj.nextLine();
             if (input.equals("E") || input.equals("e")) {

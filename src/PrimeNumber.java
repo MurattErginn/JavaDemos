@@ -4,14 +4,13 @@ This class contains a function which finds whether the number received from the 
  */
 public class PrimeNumber {
     public static void main(String[] args) {
-        Scanner scanObj = new Scanner(System.in);
-        boolean isOn = true;
-        while (isOn) {
+
+        while (true) {
+            Scanner scanObj = new Scanner(System.in);
             System.out.print("Please enter a number(enter \"E\" to exit): ");
             String input =  scanObj.nextLine();
-            if(input.equals("E")) {
+            if(input.equals("E") || input.equals("e")) {
                 System.out.println("Have a great day!!!");
-                isOn = false;
                 break;
             } else {
                 int number = Integer.parseInt(input);

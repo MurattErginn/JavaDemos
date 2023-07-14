@@ -6,21 +6,15 @@ notifies the user with a message.
  */
 public class VowelType {
     public static void main(String[] args) {
-
-        boolean isOn = true;
-        Scanner scanObj = new Scanner(System.in);
-        System.out.print("Lütfen bir harf giriniz(Çıkış için \"exit\" veya \"Exit\" yazınız): ");
-        String input = scanObj.nextLine();
-
-        while(isOn) {
+        while(true) {
+            Scanner scanObj = new Scanner(System.in);
+            System.out.print("Lütfen bir harf giriniz (Çıkış için \"exit\" veya \"Exit\" yazınız): ");
+            String input = scanObj.nextLine();
             if(input.equals("Exit") || input.equals("exit")) {
                 System.out.println("Have a great day!");
-                isOn = false;
                 break;
             } else {
                 System.out.println("Girilen karakter " + findVovelType(input.charAt(0)));
-                System.out.print("Lütfen bir harf giriniz(Çıkış için \"exit\" veya \"Exit\" yazınız): ");
-                input = scanObj.nextLine();
             }
         }
     }
