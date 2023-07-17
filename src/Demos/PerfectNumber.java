@@ -1,3 +1,5 @@
+package Demos;
+
 import java.util.Scanner;
 /*
     This class contains a function which finds whether the number received from the user is perfect or not and  notifies

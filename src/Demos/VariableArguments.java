@@ -1,3 +1,5 @@
+package Demos;
+
 /*
     This class is a demo for Variable Arguments
  */
